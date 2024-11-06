@@ -1,13 +1,24 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
    background-image: url(img/fondo\ navidad.png);
+   background-size: cover;
+    background-position: center;
 }
 
+h1.title {
+    color: white;
+    font-size: 70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px; /* Espacio entre el título y el contenedor */
+    text-align: center;
+}
 
 .container {
     text-align: center;
@@ -16,25 +27,17 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(47, 208, 14, 0.2);
 }
-.title {
-    color: white;
-    font-size: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  
-}
 
-h1.title {
-    color: white;
-    font-size: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 20px; /* Añade espacio arriba del título */
-    text-align: uppercase;
-}
+
+
 
 h2 {
+    font-size: 40px;
     margin-bottom: 10px;
-    color: #45a049;
-    font-weight: bold;
+    color: #00ff0d;
+    text-shadow: 2px 2px 5px rgba(235, 12, 194, 0.914);
+    box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.2);
+    font-weight: normal;
 }
 
 h3 {
@@ -44,7 +47,7 @@ h3 {
 
 p {
     margin-bottom: 20px;
-    color: red !important;
+    color: white !important;
 }
 
 .button-container {
@@ -56,11 +59,11 @@ p {
 button {
     padding: 10px 20px;
     border: none;
-    background-color: #4CAF50;
+    background-color: #45a049;
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 button:hover {
