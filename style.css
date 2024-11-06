@@ -1,39 +1,75 @@
-body{
-    background-image: url(img/imagen\ \(1\).png);
-    background-size: cover;
-    font-family: 'Arial', sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   background-image: url(img/fondo\ navidad.png);
 }
 
 .container {
-    width: 300px;
-    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.form-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 8px;
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-form {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-button {
-    background-color: #4CAF50;
+button[type="submit"] {
+    background-color: #007BFF;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
 }
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+

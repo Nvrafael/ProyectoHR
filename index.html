@@ -1,50 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página de Registro y Login</title>
+    <title>Registro y Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Registro</h1>
-        <form>
-            <label for="username">Nombre de usuario:</label>
-            <input type="text" id="username" name="username" required>
+        <h2>Bienvenido</h2>
+        <p>Por favor, selecciona una opción:</p>
+        <div class="button-container">
+            <button onclick="showForm('register')">Registro</button>
+            <button onclick="showForm('login')">Login</button>
+        </div>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
+        <!-- Formularios de registro y login ocultos al principio -->
+        <div id="registerForm" class="form-container" style="display: none;">
+            <h3>Formulario de Registro</h3>
+            <form>
+                <input type="text" placeholder="Nombre de usuario" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
 
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Registrarse</button>
-        </form>
-
-        <h1>Iniciar Sesión</h1>
-        <form>
-            <label for="login-username">Nombre de usuario:</label>
-            <input type="text" id="login-username" name="login-username" required>
-
-            <label for="login-password">Contraseña:</label>
-            <input type="password" id="login-password" name="login-password" required>
-
-            <button type="submit">Iniciar Sesión</button>
-        </form>
+        <div id="loginForm" class="form-container" style="display: none;">
+            <h3>Formulario de Login</h3>
+            <form>
+                <input type="text" placeholder="Nombre de usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
     </div>
-    <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     
+    <script src="script.js"></script>
 </body>
 </html>
